@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-17T13:19:05.829Z",
-  "totalCommands": 37,
+  "generated": "2026-04-17T13:20:12.284Z",
+  "totalCommands": 38,
   "groups": {
     "pwnedCounter DeathModify Commands 1.4": [
       {
@@ -295,6 +295,19 @@
         "group": "Ungrouped",
         "triggers": [
           "asdasdasdasdasdasd"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
+      {
+        "id": "19297610-a971-4cde-bb20-2ea77a9898ed",
+        "name": "test2",
+        "group": "Ungrouped",
+        "triggers": [
+          "test22222"
         ],
         "enabled": true,
         "caseSensitive": false,
