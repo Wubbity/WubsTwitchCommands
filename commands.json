@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-17T14:05:53.289Z",
-  "totalCommands": 36,
+  "generated": "2026-04-17T14:18:48.675Z",
+  "totalCommands": 34,
   "groups": {
     "pwnedCounter DeathModify Commands 1.4": [
       {
@@ -87,6 +87,20 @@
         "cooldown": null
       },
       {
+        "id": "ddb8c881-20a5-4be1-9228-2c8cbbe620bf",
+        "name": "MCam",
+        "group": "Change Scenes",
+        "triggers": [
+          "!MCam",
+          "!MCamera"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
+      {
         "id": "6dd8c1f7-2831-40de-ad0a-7c035452a69b",
         "name": "Main Game",
         "group": "Change Scenes",
@@ -113,25 +127,11 @@
         "cooldown": null
       }
     ],
-    "Ungrouped": [
-      {
-        "id": "e04f2464-e8de-495b-91cb-01992e2fedbe",
-        "name": "8 Ball",
-        "group": "Ungrouped",
-        "triggers": [
-          "!8ball",
-          "?"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
+    "Information Commands": [
       {
         "id": "fa99d43b-c812-41d6-80e9-afaea0fd5b2d",
         "name": "Full Commands List",
-        "group": "Ungrouped",
+        "group": "Information Commands",
         "triggers": [
           "!commands",
           "!cmds",
@@ -144,48 +144,9 @@
         "cooldown": null
       },
       {
-        "id": "7a7ac218-fa89-4229-acb8-0e00e90d2485",
-        "name": "Stream End",
-        "group": "Ungrouped",
-        "triggers": [
-          "!end"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "60344d2c-016f-406f-a7e1-59cd9c9ccb51",
-        "name": "EndReset",
-        "group": "Ungrouped",
-        "triggers": [
-          "!endreset"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "c2340460-7908-499f-a330-809e1d1d6f93",
-        "name": "Fight",
-        "group": "Ungrouped",
-        "triggers": [
-          "!fight"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
         "id": "ce853dc3-7b7d-40c5-b21d-df1ab4467244",
         "name": "Discord",
-        "group": "Ungrouped",
+        "group": "Information Commands",
         "triggers": [
           "!HH"
         ],
@@ -196,51 +157,9 @@
         "cooldown": null
       },
       {
-        "id": "ddb8c881-20a5-4be1-9228-2c8cbbe620bf",
-        "name": "MCam",
-        "group": "Ungrouped",
-        "triggers": [
-          "!MCam",
-          "!MCamera"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "37fc28d2-f999-4a02-9f19-92f47d669f34",
-        "name": "Stream End - No",
-        "group": "Ungrouped",
-        "triggers": [
-          "!no"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "b33b3274-c7f1-4f69-8513-0b7ffd7e4461",
-        "name": "Refresh Website",
-        "group": "Ungrouped",
-        "triggers": [
-          "!rw",
-          "!refresh",
-          "!rcommands"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
         "id": "5d13fd34-77cd-4993-882e-7f2974a5d6ed",
         "name": "HH Shop",
-        "group": "Ungrouped",
+        "group": "Information Commands",
         "triggers": [
           "!shop",
           "!merch",
@@ -255,7 +174,7 @@
       {
         "id": "057ae332-1dd7-4785-968c-53fd2585ca41",
         "name": "Throne",
-        "group": "Ungrouped",
+        "group": "Information Commands",
         "triggers": [
           "!throne"
         ],
@@ -264,13 +183,16 @@
         "description": "",
         "access": "Everyone",
         "cooldown": null
-      },
+      }
+    ],
+    "Fun Commands": [
       {
-        "id": "225e8dc1-b1e4-45d0-8e8c-3df0f6b3135c",
-        "name": "Stream End - Yes",
-        "group": "Ungrouped",
+        "id": "e04f2464-e8de-495b-91cb-01992e2fedbe",
+        "name": "8 Ball",
+        "group": "Fun Commands",
         "triggers": [
-          "!yes"
+          "!8ball",
+          "?"
         ],
         "enabled": true,
         "caseSensitive": false,
@@ -279,11 +201,11 @@
         "cooldown": null
       },
       {
-        "id": "b565162c-f713-40e6-96ea-2045eba8e030",
-        "name": "test",
-        "group": "Ungrouped",
+        "id": "c2340460-7908-499f-a330-809e1d1d6f93",
+        "name": "Fight",
+        "group": "Fun Commands",
         "triggers": [
-          "assdasdasdasd"
+          "!fight"
         ],
         "enabled": true,
         "caseSensitive": false,
@@ -336,6 +258,62 @@
         "group": "Global",
         "triggers": [
           "!Zoom"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      }
+    ],
+    "Ungrouped": [
+      {
+        "id": "7a7ac218-fa89-4229-acb8-0e00e90d2485",
+        "name": "Stream End",
+        "group": "Ungrouped",
+        "triggers": [
+          "!end"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
+      {
+        "id": "37fc28d2-f999-4a02-9f19-92f47d669f34",
+        "name": "Stream End - No",
+        "group": "Ungrouped",
+        "triggers": [
+          "!no"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
+      {
+        "id": "b33b3274-c7f1-4f69-8513-0b7ffd7e4461",
+        "name": "Refresh Website",
+        "group": "Ungrouped",
+        "triggers": [
+          "!rw",
+          "!refresh",
+          "!rcommands"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
+      {
+        "id": "225e8dc1-b1e4-45d0-8e8c-3df0f6b3135c",
+        "name": "Stream End - Yes",
+        "group": "Ungrouped",
+        "triggers": [
+          "!yes"
         ],
         "enabled": true,
         "caseSensitive": false,

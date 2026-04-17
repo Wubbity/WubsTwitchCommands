@@ -56,6 +56,20 @@
       "access": "Everyone",
       "cooldown": null,
       "hidden": false
+    },
+    "60344d2c-016f-406f-a7e1-59cd9c9ccb51": {
+      "_label": "!endreset",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
+    },
+    "b565162c-f713-40e6-96ea-2045eba8e030": {
+      "_label": "assdasdasdasd",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
     }
   },
   "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
@@ -226,13 +240,6 @@
     "cooldown": null,
     "hidden": false
   },
-  "60344d2c-016f-406f-a7e1-59cd9c9ccb51": {
-    "_label": "!endreset",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
   "ae433518-a0b4-4772-8def-41b92b5cdf34": {
     "_label": "!play",
     "description": "",
@@ -242,13 +249,6 @@
   },
   "7a7ac218-fa89-4229-acb8-0e00e90d2485": {
     "_label": "!end",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "b565162c-f713-40e6-96ea-2045eba8e030": {
-    "_label": "assdasdasdasd",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
