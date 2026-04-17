@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T14:45:00.853Z",
+  "generated": "2026-04-17T15:24:55.972Z",
   "totalCommands": 35,
   "groups": {
     "pwnedCounter DeathModify Commands 1.4": [
@@ -49,10 +49,10 @@
     "Change Scenes": [
       {
         "id": "629a6499-25da-4550-b009-6750b2a1c436",
-        "name": "Intermission Bong/Hand Cam",
+        "name": "Intermission Front Cam",
         "group": "Change Scenes",
         "triggers": [
-          "!iBC"
+          "!iFC"
         ],
         "enabled": true,
         "caseSensitive": false,
@@ -266,11 +266,11 @@
         "cooldown": null
       }
     ],
-    "Ungrouped": [
+    "Admin/Streamer Only Commands": [
       {
         "id": "7a7ac218-fa89-4229-acb8-0e00e90d2485",
         "name": "Stream End",
-        "group": "Ungrouped",
+        "group": "Admin/Streamer Only Commands",
         "triggers": [
           "!end"
         ],
@@ -283,7 +283,7 @@
       {
         "id": "37fc28d2-f999-4a02-9f19-92f47d669f34",
         "name": "Stream End - No",
-        "group": "Ungrouped",
+        "group": "Admin/Streamer Only Commands",
         "triggers": [
           "!no"
         ],
@@ -295,8 +295,8 @@
       },
       {
         "id": "b33b3274-c7f1-4f69-8513-0b7ffd7e4461",
-        "name": "Refresh Website",
-        "group": "Ungrouped",
+        "name": "Refresh Website Commands",
+        "group": "Admin/Streamer Only Commands",
         "triggers": [
           "!rw",
           "!refresh",
@@ -311,7 +311,7 @@
       {
         "id": "225e8dc1-b1e4-45d0-8e8c-3df0f6b3135c",
         "name": "Stream End - Yes",
-        "group": "Ungrouped",
+        "group": "Admin/Streamer Only Commands",
         "triggers": [
           "!yes"
         ],
