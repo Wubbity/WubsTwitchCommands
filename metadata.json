@@ -7,6 +7,13 @@
       "access": "Everyone",
       "cooldown": null,
       "hidden": false
+    },
+    "8f56ea1e-ce5a-4c07-b9b2-3323b4fb37ce": {
+      "_label": "123123123",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
     }
   },
   "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
@@ -228,13 +235,6 @@
   },
   "7f953663-9767-4ab0-9729-8b11bfe62225": {
     "_label": "!deathcategory",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "8f56ea1e-ce5a-4c07-b9b2-3323b4fb37ce": {
-    "_label": "123123123",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
