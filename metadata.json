@@ -72,6 +72,13 @@
     "cooldown": null,
     "hidden": false
   },
+  "fa99d43b-c812-41d6-80e9-afaea0fd5b2d": {
+    "_label": "!commands",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
   "e04f2464-e8de-495b-91cb-01992e2fedbe": {
     "_label": "!8ball",
     "description": "",
