@@ -114,6 +114,13 @@
     "cooldown": null,
     "hidden": false
   },
+  "336f9a8f-4047-43f3-b863-5ed2e6fcdab8": {
+    "_label": "asdasdasdasdasd",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
   "629a6499-25da-4550-b009-6750b2a1c436": {
     "_label": "!iBC",
     "description": "",
@@ -200,6 +207,13 @@
   },
   "da5ac68e-2519-429d-abc0-7754890cdbbc": {
     "_label": "!skip",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "63d77081-22c5-4f1e-8afe-049a1fd5a076": {
+    "_label": "asdasdasdasdasdasd",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
