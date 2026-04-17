@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T13:40:42.965Z",
+  "generated": "2026-04-17T13:45:42.979Z",
   "totalCommands": 35,
   "groups": {
     "pwnedCounter DeathModify Commands 1.4": [
@@ -134,7 +134,8 @@
         "group": "Ungrouped",
         "triggers": [
           "!commands",
-          "!cmds"
+          "!cmds",
+          "!wtc"
         ],
         "enabled": true,
         "caseSensitive": false,
