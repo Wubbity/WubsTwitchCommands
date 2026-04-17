@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WUBBITY // COMMANDS</title>
+<meta name="description" content="Live command registry for twitch.tv/wubbity." />
+
+<!-- Fonts: distinctive mono + editorial serif pairing -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    /* Twitch-inspired dark purple palette */
+    --bg: #0e0b1a;
+    --bg-deep: #07050f;
+    --ink: #efeaff;
+    --ink-dim: #9288b8;
+    --ink-faint: #3d3459;
+    --accent: #9146ff;          /* Twitch purple */
+    --accent-bright: #bf94ff;   /* lighter purple for hover/glow */
+    --accent-hot: #ff3e9a;      /* hot pink accent */
+    --accent-warm: #ffb800;     /* amber for sub tier */
+    --panel: #17132a;
+    --panel-hi: #1e1835;
+    --border: #2a2345;
+    --glow: rgba(145, 70, 255, 0.35);
+    --scan: rgba(255, 255, 255, 0.015);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg-deep);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* CRT ambiance: subtle scanlines + vignette */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        var(--scan) 0,
+        var(--scan) 1px,
+        transparent 1px,
+        transparent 3px
+      ),
+      radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.6) 100%);
+    z-index: 100;
+    mix-blend-mode: overlay;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(
+        circle at 15% -5%,
+        rgba(145, 70, 255, 0.18),
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 95% 100%,
+        rgba(255, 62, 154, 0.10),
+        transparent 45%
+      );
+    z-index: 1;
+  }
+
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: clamp(16px, 3vw, 40px);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ==================== HEADER ==================== */
+  .masthead {
+    border: 1px solid var(--border);
+    background: var(--panel);
+    padding: 32px clamp(20px, 3vw, 40px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--accent) 20%,
+      var(--accent-hot) 50%,
+      var(--accent) 80%,
+      transparent
+    );
+    animation: pulse-line 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-line {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .masthead-top .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+    animation: blink 2s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .title {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: clamp(48px, 8vw, 92px);
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .title .slash {
+    color: var(--accent);
+    font-style: normal;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 0.7em;
+    vertical-align: 0.15em;
+    margin: 0 0.1em;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--ink-dim);
+    max-width: 640px;
+    margin-top: 8px;
+  }
+
+  .subtitle strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .masthead-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--border);
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    font-size: 11px;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  .stat .num {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 32px;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    margin-bottom: 2px;
+  }
+
+  /* ==================== CONTROLS ==================== */
+  .controls {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+  }
+
+  .search {
+    flex: 1 1 300px;
+    position: relative;
+  }
+
+  .search input {
+    width: 100%;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 13px;
+    padding: 12px 16px 12px 40px;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+
+  .search input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--glow);
+  }
+
+  .search::before {
+    content: '>';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .search input::placeholder {
+    color: var(--ink-faint);
+  }
+
+  .filter-pills {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--ink-dim);
+    font-family: inherit;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .pill:hover { border-color: var(--ink-dim); color: var(--ink); }
+  .pill.active {
+    background: var(--accent);
+    color: var(--bg-deep);
+    border-color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* ==================== GROUPS ==================== */
+  .group {
+    margin-top: 40px;
+    animation: fade-in-up 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .group:nth-child(1) { animation-delay: 0.05s; }
+  .group:nth-child(2) { animation-delay: 0.1s; }
+  .group:nth-child(3) { animation-delay: 0.15s; }
+  .group:nth-child(4) { animation-delay: 0.2s; }
+  .group:nth-child(5) { animation-delay: 0.25s; }
+  .group:nth-child(6) { animation-delay: 0.3s; }
+  .group:nth-child(n+7) { animation-delay: 0.35s; }
+
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .group-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .group-header h2 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .group-header .count {
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .group-header .count::before {
+    content: '—';
+    margin-right: 6px;
+    color: var(--ink-faint);
+  }
+
+  /* ==================== COMMAND CARDS ==================== */
+  .cmd-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .cmd {
+    background: var(--panel);
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: start;
+    transition: background 0.15s;
+    position: relative;
+  }
+
+  .cmd:hover { background: var(--panel-hi); }
+
+  .cmd.disabled { opacity: 0.4; }
+
+  .cmd-triggers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .trigger {
+    display: inline-block;
+    background: var(--bg-deep);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 10px;
+    letter-spacing: 0.02em;
+  }
+
+  .trigger.secondary {
+    border-color: var(--ink-faint);
+    color: var(--ink-dim);
+  }
+
+  .cmd-desc {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-top: 6px;
+    max-width: 68ch;
+  }
+
+  .cmd-desc.empty {
+    font-style: italic;
+    color: var(--ink-faint);
+  }
+
+  .cmd-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    text-align: right;
+    min-width: 140px;
+  }
+
+  .access {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid var(--ink-dim);
+    color: var(--ink-dim);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .access.everyone { border-color: var(--accent-bright); color: var(--accent-bright); }
+  .access.subscribers { border-color: var(--accent-warm); color: var(--accent-warm); }
+  .access.moderators { border-color: #00d98a; color: #00d98a; }
+  .access.vip { border-color: var(--accent-hot); color: var(--accent-hot); }
+
+  .cooldown {
+    font-size: 10px;
+    color: var(--ink-faint);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .status-off {
+    font-size: 9px;
+    color: var(--accent-hot);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  /* ==================== FOOTER ==================== */
+  footer {
+    margin-top: 80px;
+    padding: 32px 0 20px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border-color 0.15s;
+  }
+  footer a:hover { border-bottom-color: var(--accent); }
+
+  /* ==================== STATES ==================== */
+  .loading, .empty-state {
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--ink-dim);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .loading::after {
+    content: '...';
+    display: inline-block;
+    animation: dots 1.5s steps(4, end) infinite;
+    overflow: hidden;
+    vertical-align: bottom;
+    width: 0;
+  }
+
+  @keyframes dots {
+    0% { width: 0; }
+    100% { width: 1.2em; }
+  }
+
+  /* ==================== MOBILE ==================== */
+  @media (max-width: 640px) {
+    .cmd {
+      grid-template-columns: 1fr;
+    }
+    .cmd-meta {
+      align-items: flex-start;
+      text-align: left;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .title { font-size: 48px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="masthead">
+      <div class="masthead-top">
+        <span class="tag"><span class="dot"></span>LIVE REGISTRY</span>
+        <span>WUBBITY &middot; TWITCH.TV/WUBBITY</span>
+      </div>
+
+      <h1 class="title">wubbity<span class="slash">//</span><em>commands</em></h1>
+
+      <p class="subtitle">
+        The live command registry for <strong>twitch.tv/wubbity</strong>.
+        Synced straight from Streamer.bot — if it's here, you can use it in chat. Try one!
+      </p>
+
+      <div class="masthead-stats">
+        <div class="stat">
+          <span class="num" id="stat-count">—</span>
+          Commands Online
+        </div>
+        <div class="stat">
+          <span class="num" id="stat-groups">—</span>
+          Groups
+        </div>
+        <div class="stat">
+          <span class="num" id="stat-updated">—</span>
+          Last Sync
+        </div>
+      </div>
+    </header>
+
+    <div class="controls">
+      <div class="search">
+        <input type="search" id="search" placeholder="search by trigger, description, or group..." autocomplete="off" />
+      </div>
+      <div class="filter-pills" id="filters">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="everyone">Everyone</button>
+        <button class="pill" data-filter="subscribers">Subs</button>
+        <button class="pill" data-filter="moderators">Mods</button>
+      </div>
+    </div>
+
+    <main id="content">
+      <div class="loading">Fetching command registry</div>
+    </main>
+
+    <footer>
+      <span>v1.0 &middot; auto-generated from streamer.bot</span>
+      <span>
+        <a href="https://twitch.tv/wubbity" target="_blank" rel="noopener">twitch.tv/wubbity</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://homieshouse.net" target="_blank" rel="noopener">homieshouse.net</a>
+      </span>
+    </footer>
+
+  </div>
+
+<script>
+  // -------------------------------------------------------------
+  // Security: this page only READS a public JSON file in the same
+  // repo. It never talks to any Streamer.bot WebSocket, never sends
+  // data anywhere, and has no auth tokens embedded. Nothing here
+  // can be "hijacked" because there is nothing to hijack — it is
+  // literally a static file renderer.
+  // -------------------------------------------------------------
+
+  const DATA_URL = 'commands.json';
+  const state = {
+    data: null,
+    search: '',
+    filter: 'all',
+  };
+
+  // HTML-escape everything we render since commands.json content,
+  // while written by the owner, is user-visible and should be treated
+  // as untrusted defensively (future-proofing against typos in names).
+  function esc(s) {
+    if (s === null || s === undefined) return '';
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function accessClass(access) {
+    const a = (access || '').toLowerCase();
+    if (a.includes('mod')) return 'moderators';
+    if (a.includes('vip')) return 'vip';
+    if (a.includes('sub')) return 'subscribers';
+    if (a.includes('every')) return 'everyone';
+    return '';
+  }
+
+  function matchesFilter(cmd) {
+    if (state.filter === 'all') return true;
+    return accessClass(cmd.access) === state.filter;
+  }
+
+  function matchesSearch(cmd) {
+    if (!state.search) return true;
+    const q = state.search.toLowerCase();
+    const hay = [
+      cmd.name,
+      cmd.description,
+      cmd.group,
+      ...(cmd.triggers || []),
+    ].join(' ').toLowerCase();
+    return hay.includes(q);
+  }
+
+  function render() {
+    const content = document.getElementById('content');
+    if (!state.data) return;
+
+    const { groups } = state.data;
+    const groupNames = Object.keys(groups).sort();
+
+    let html = '';
+    let shownCount = 0;
+
+    for (const gname of groupNames) {
+      const cmds = groups[gname].filter(c => matchesFilter(c) && matchesSearch(c));
+      if (cmds.length === 0) continue;
+      shownCount += cmds.length;
+
+      html += `<section class="group">`;
+      html += `<div class="group-header">`;
+      html += `<h2>${esc(gname)}</h2>`;
+      html += `<span class="count">${cmds.length} command${cmds.length === 1 ? '' : 's'}</span>`;
+      html += `</div>`;
+      html += `<div class="cmd-list">`;
+
+      for (const c of cmds) {
+        const ac = accessClass(c.access);
+        const triggers = (c.triggers || []).map((t, i) =>
+          `<span class="trigger${i === 0 ? '' : ' secondary'}">${esc(t)}</span>`
+        ).join('');
+
+        html += `<article class="cmd${c.enabled ? '' : ' disabled'}">`;
+        html +=   `<div>`;
+        html +=     `<div class="cmd-triggers">${triggers || '<span class="trigger">' + esc(c.name) + '</span>'}</div>`;
+        html +=     c.description
+          ? `<p class="cmd-desc">${esc(c.description)}</p>`
+          : `<p class="cmd-desc empty">No description yet.</p>`;
+        html +=   `</div>`;
+        html +=   `<div class="cmd-meta">`;
+        if (!c.enabled) html += `<span class="status-off">· disabled</span>`;
+        html +=     `<span class="access ${ac}">${esc(c.access || 'Everyone')}</span>`;
+        if (c.cooldown) html += `<span class="cooldown">${esc(c.cooldown)}</span>`;
+        html +=   `</div>`;
+        html += `</article>`;
+      }
+
+      html += `</div></section>`;
+    }
+
+    if (shownCount === 0) {
+      html = `<div class="empty-state">No commands match your filter.</div>`;
+    }
+
+    content.innerHTML = html;
+  }
+
+  function updateStats() {
+    const { data } = state;
+    document.getElementById('stat-count').textContent = data.totalCommands;
+    document.getElementById('stat-groups').textContent = Object.keys(data.groups).length;
+
+    const d = new Date(data.generated);
+    const now = new Date();
+    const mins = Math.floor((now - d) / 60000);
+    let label;
+    if (mins < 1) label = 'just now';
+    else if (mins < 60) label = `${mins}m ago`;
+    else if (mins < 1440) label = `${Math.floor(mins/60)}h ago`;
+    else label = `${Math.floor(mins/1440)}d ago`;
+    document.getElementById('stat-updated').textContent = label;
+  }
+
+  async function load() {
+    try {
+      // Cache-bust so viewers see fresh data after a push
+      const res = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = await res.json();
+
+      // Basic schema sanity check — don't render malformed data
+      if (!json || typeof json !== 'object' || !json.groups) {
+        throw new Error('Malformed commands.json');
+      }
+
+      state.data = json;
+      updateStats();
+      render();
+    } catch (err) {
+      document.getElementById('content').innerHTML =
+        `<div class="empty-state">Could not load command registry.<br>(${esc(err.message)})</div>`;
+      console.error(err);
+    }
+  }
+
+  // Wire controls
+  document.getElementById('search').addEventListener('input', (e) => {
+    state.search = e.target.value.trim();
+    render();
+  });
+
+  document.getElementById('filters').addEventListener('click', (e) => {
+    const btn = e.target.closest('.pill');
+    if (!btn) return;
+    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    state.filter = btn.dataset.filter;
+    render();
+  });
+
+  load();
+</script>
+</body>
+</html>
