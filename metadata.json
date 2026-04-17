@@ -1,6 +1,14 @@
 {
   "_comment": "Edit descriptions/access/cooldown here. New commands auto-populate. Deleted commands move to _archived so they restore if recreated with the same ID.",
-  "_archived": {},
+  "_archived": {
+    "343799c0-2eb6-412d-a7c0-2de54849443c": {
+      "_label": "asdasd",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
+    }
+  },
   "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
     "_label": "!deathset",
     "description": "",
@@ -220,13 +228,6 @@
   },
   "7f953663-9767-4ab0-9729-8b11bfe62225": {
     "_label": "!deathcategory",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "343799c0-2eb6-412d-a7c0-2de54849443c": {
-    "_label": "asdasd",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
