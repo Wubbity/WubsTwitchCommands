@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-17T15:35:56.468Z",
-  "totalCommands": 32,
+  "generated": "2026-04-17T15:38:27.359Z",
+  "totalCommands": 31,
   "groups": {
     "Change Scenes": [
       {
@@ -188,40 +188,6 @@
         "cooldown": null
       }
     ],
-    "Global": [
-      {
-        "id": "891c62e4-9237-49f5-8ac4-d360f3b13c66",
-        "name": "Socials",
-        "group": "Global",
-        "triggers": [
-          "!Socials",
-          "!Twitter",
-          "!TikTok",
-          "!Snapchat",
-          "!Insta",
-          "!Youtube",
-          "!YT"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "865fcbb9-8fdb-4422-9403-a056415cd82b",
-        "name": "Zoom Camera",
-        "group": "Global",
-        "triggers": [
-          "!Zoom"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      }
-    ],
     "Admin/Streamer Only Commands": [
       {
         "id": "7a7ac218-fa89-4229-acb8-0e00e90d2485",
@@ -284,7 +250,7 @@
         "name": "Set Game COD",
         "group": "Set Game",
         "triggers": [
-          "!setgame call of duty: modern warfare iii",
+          "!setgame Call of Duty: Black Ops 7",
           "!cod"
         ],
         "enabled": true,
@@ -408,6 +374,27 @@
         "cooldown": null
       }
     ],
+    "Global": [
+      {
+        "id": "891c62e4-9237-49f5-8ac4-d360f3b13c66",
+        "name": "Socials",
+        "group": "Global",
+        "triggers": [
+          "!Socials",
+          "!Twitter",
+          "!TikTok",
+          "!Snapchat",
+          "!Insta",
+          "!Youtube",
+          "!YT"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      }
+    ],
     "Pre/Post/Brb": [
       {
         "id": "1723c7d4-6fd4-4286-afe3-80d2689fe409",
@@ -440,7 +427,7 @@
         "name": "Starting Soon",
         "group": "Pre/Post/Brb",
         "triggers": [
-          "!SS"
+          "!Starting"
         ],
         "enabled": true,
         "caseSensitive": false,

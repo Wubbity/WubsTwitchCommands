@@ -91,6 +91,13 @@
       "access": "Everyone",
       "cooldown": null,
       "hidden": false
+    },
+    "865fcbb9-8fdb-4422-9403-a056415cd82b": {
+      "_label": "!Zoom",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
     }
   },
   "6dd8c1f7-2831-40de-ad0a-7c035452a69b": {
@@ -121,13 +128,6 @@
     "cooldown": null,
     "hidden": false
   },
-  "865fcbb9-8fdb-4422-9403-a056415cd82b": {
-    "_label": "!Zoom",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
   "5d13fd34-77cd-4993-882e-7f2974a5d6ed": {
     "_label": "!shop",
     "description": "",
@@ -143,7 +143,7 @@
     "hidden": false
   },
   "3fef8875-16ca-4921-bec5-140576249dd7": {
-    "_label": "!setgame call of duty: modern warfare iii",
+    "_label": "!setgame Call of Duty: Black Ops 7",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
@@ -234,7 +234,7 @@
     "hidden": false
   },
   "8fd9c88f-d0bb-47ba-ab53-421df6d23132": {
-    "_label": "!SS",
+    "_label": "!Starting",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
