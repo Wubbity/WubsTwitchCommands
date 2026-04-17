@@ -1,4 +1,235 @@
 {
   "_comment": "Edit descriptions/access/cooldown here. New commands auto-populate. Deleted commands move to _archived so they restore if recreated with the same ID.",
-  "_archived": {}
+  "_archived": {},
+  "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
+    "_label": "!deathset",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "7968c253-7bd6-4f1b-a9aa-7295ec437794": {
+    "_label": "!pwnedCounter",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "6dd8c1f7-2831-40de-ad0a-7c035452a69b": {
+    "_label": "!MGame",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "e04f2464-e8de-495b-91cb-01992e2fedbe": {
+    "_label": "!8ball",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "406a7861-74be-4b73-8876-7c0d4491f7da": {
+    "_label": "!light",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "865fcbb9-8fdb-4422-9403-a056415cd82b": {
+    "_label": "!Zoom",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "5d13fd34-77cd-4993-882e-7f2974a5d6ed": {
+    "_label": "!shop",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "225e8dc1-b1e4-45d0-8e8c-3df0f6b3135c": {
+    "_label": "!yes",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "3fef8875-16ca-4921-bec5-140576249dd7": {
+    "_label": "!setgame call of duty: modern warfare iii",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "3ac2bc3d-4a46-46a5-a677-7fc5b0369037": {
+    "_label": "!MSwap",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "37fc28d2-f999-4a02-9f19-92f47d669f34": {
+    "_label": "!no",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "6bf1417f-27f1-49d9-81e5-def5117bc67d": {
+    "_label": "!np",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "057ae332-1dd7-4785-968c-53fd2585ca41": {
+    "_label": "!throne",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "891c62e4-9237-49f5-8ac4-d360f3b13c66": {
+    "_label": "!Socials",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "629a6499-25da-4550-b009-6750b2a1c436": {
+    "_label": "!iBC",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "2bdad2d7-27a5-4444-b9d9-2682275a827e": {
+    "_label": "!stopmusic",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "1723c7d4-6fd4-4286-afe3-80d2689fe409": {
+    "_label": "!BRB",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "c2340460-7908-499f-a330-809e1d1d6f93": {
+    "_label": "!fight",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "9eef7989-232e-4fc9-b6af-0d3d4ad5ae04": {
+    "_label": "!setgame Minecraft",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "8fd9c88f-d0bb-47ba-ab53-421df6d23132": {
+    "_label": "!SS",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "ce853dc3-7b7d-40c5-b21d-df1ab4467244": {
+    "_label": "!HH",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "62569659-b031-41aa-bce1-1c5e8328a328": {
+    "_label": "!End",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "60344d2c-016f-406f-a7e1-59cd9c9ccb51": {
+    "_label": "!endreset",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "ae433518-a0b4-4772-8def-41b92b5cdf34": {
+    "_label": "!play",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "7a7ac218-fa89-4229-acb8-0e00e90d2485": {
+    "_label": "!end",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "da5ac68e-2519-429d-abc0-7754890cdbbc": {
+    "_label": "!skip",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "23761572-c45c-4983-a0ba-51ae1c13d3ac": {
+    "_label": "!iMain",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "a8c30a2f-8022-4a9c-b551-a9730472f74f": {
+    "_label": "!previoussong",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "1dfa04cf-18f3-4433-8e5d-d09faea692c8": {
+    "_label": "!iSwap",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "86e34849-aabf-403b-bdc3-47dab200a92c": {
+    "_label": "!q",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "7f953663-9767-4ab0-9729-8b11bfe62225": {
+    "_label": "!deathcategory",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "ddb8c881-20a5-4be1-9228-2c8cbbe620bf": {
+    "_label": "!MCam",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "fa12e964-e05b-4c1d-b18d-72d21054b22c": {
+    "_label": "!nextsong",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  }
 }
