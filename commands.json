@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-17T14:18:48.675Z",
-  "totalCommands": 34,
+  "generated": "2026-04-17T14:45:00.853Z",
+  "totalCommands": 35,
   "groups": {
     "pwnedCounter DeathModify Commands 1.4": [
       {
@@ -494,6 +494,22 @@
       }
     ],
     "LLJW Controls": [
+      {
+        "id": "64a8e2e8-0ed6-4e23-a0f1-976d159904eb",
+        "name": "Play JW",
+        "group": "LLJW Controls",
+        "triggers": [
+          "!play",
+          "!juicewrld",
+          "!jw",
+          "!search"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
       {
         "id": "da5ac68e-2519-429d-abc0-7754890cdbbc",
         "name": "Skip Song",
