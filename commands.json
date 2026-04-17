@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-17T15:38:27.359Z",
-  "totalCommands": 31,
+  "generated": "2026-04-17T23:49:04.691Z",
+  "totalCommands": 32,
   "groups": {
     "Change Scenes": [
       {
@@ -460,6 +460,29 @@
         "triggers": [
           "!skip",
           "!s"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      }
+    ],
+    "Ungrouped": [
+      {
+        "id": "d46fd9cf-5c75-4dbf-8e26-4fc7aabf8f1b",
+        "name": "Hi Responses",
+        "group": "Ungrouped",
+        "triggers": [
+          "Hello",
+          "Hi",
+          "Hey",
+          "Wassup",
+          "Waddup",
+          "Wassuh",
+          "Yurrr",
+          "Heya",
+          "Heyy"
         ],
         "enabled": true,
         "caseSensitive": false,

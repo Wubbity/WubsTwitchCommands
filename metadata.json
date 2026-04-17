@@ -268,6 +268,13 @@
     "cooldown": null,
     "hidden": false
   },
+  "d46fd9cf-5c75-4dbf-8e26-4fc7aabf8f1b": {
+    "_label": "Hello",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
   "da5ac68e-2519-429d-abc0-7754890cdbbc": {
     "_label": "!skip",
     "description": "",
