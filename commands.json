@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-17T12:37:22.804Z",
-  "totalCommands": 33,
+  "generated": "2026-04-17T13:05:07.905Z",
+  "totalCommands": 34,
   "groups": {
     "pwnedCounter DeathModify Commands 1.4": [
       {
@@ -200,6 +200,21 @@
         "group": "Ungrouped",
         "triggers": [
           "!no"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
+        "cooldown": null
+      },
+      {
+        "id": "b33b3274-c7f1-4f69-8513-0b7ffd7e4461",
+        "name": "Refresh Website",
+        "group": "Ungrouped",
+        "triggers": [
+          "!rw",
+          "!refresh",
+          "!rcommands"
         ],
         "enabled": true,
         "caseSensitive": false,

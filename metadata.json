@@ -127,6 +127,13 @@
     "cooldown": null,
     "hidden": false
   },
+  "b33b3274-c7f1-4f69-8513-0b7ffd7e4461": {
+    "_label": "!rw",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
   "9eef7989-232e-4fc9-b6af-0d3d4ad5ae04": {
     "_label": "!setgame Minecraft",
     "description": "",
