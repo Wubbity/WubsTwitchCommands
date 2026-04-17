@@ -42,6 +42,13 @@
       "access": "Everyone",
       "cooldown": null,
       "hidden": false
+    },
+    "6565576a-61f3-4915-b29f-e67f3ceb0755": {
+      "_label": "typeshi",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
     }
   },
   "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
@@ -81,13 +88,6 @@
   },
   "865fcbb9-8fdb-4422-9403-a056415cd82b": {
     "_label": "!Zoom",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "6565576a-61f3-4915-b29f-e67f3ceb0755": {
-    "_label": "typeshi",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
