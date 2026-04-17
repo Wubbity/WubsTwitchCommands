@@ -70,21 +70,28 @@
       "access": "Everyone",
       "cooldown": null,
       "hidden": false
+    },
+    "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
+      "_label": "!deathset",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
+    },
+    "7968c253-7bd6-4f1b-a9aa-7295ec437794": {
+      "_label": "!pwnedCounter",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
+    },
+    "7f953663-9767-4ab0-9729-8b11bfe62225": {
+      "_label": "!deathcategory",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
     }
-  },
-  "19d960b1-fa5b-48b7-8caa-8289fd509f1c": {
-    "_label": "!deathset",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "7968c253-7bd6-4f1b-a9aa-7295ec437794": {
-    "_label": "!pwnedCounter",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
   },
   "6dd8c1f7-2831-40de-ad0a-7c035452a69b": {
     "_label": "!MGame",
@@ -291,13 +298,6 @@
   },
   "86e34849-aabf-403b-bdc3-47dab200a92c": {
     "_label": "!q",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "7f953663-9767-4ab0-9729-8b11bfe62225": {
-    "_label": "!deathcategory",
     "description": "",
     "access": "Everyone",
     "cooldown": null,

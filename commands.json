@@ -1,51 +1,7 @@
 {
-  "generated": "2026-04-17T15:24:55.972Z",
-  "totalCommands": 35,
+  "generated": "2026-04-17T15:35:56.468Z",
+  "totalCommands": 32,
   "groups": {
-    "pwnedCounter DeathModify Commands 1.4": [
-      {
-        "id": "19d960b1-fa5b-48b7-8caa-8289fd509f1c",
-        "name": "!deathset",
-        "group": "pwnedCounter DeathModify Commands 1.4",
-        "triggers": [
-          "!deathset"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      }
-    ],
-    "pwnedCounter DeathCommands 1.4": [
-      {
-        "id": "7f953663-9767-4ab0-9729-8b11bfe62225",
-        "name": "!deathcategory",
-        "group": "pwnedCounter DeathCommands 1.4",
-        "triggers": [
-          "!deathcategory"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "7968c253-7bd6-4f1b-a9aa-7295ec437794",
-        "name": "!pwnedCounter",
-        "group": "pwnedCounter DeathCommands 1.4",
-        "triggers": [
-          "!pwnedCounter",
-          "!deathcounter"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      }
-    ],
     "Change Scenes": [
       {
         "id": "629a6499-25da-4550-b009-6750b2a1c436",
