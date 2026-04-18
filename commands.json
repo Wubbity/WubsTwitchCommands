@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T00:00:12.173Z",
+  "generated": "2026-04-18T00:02:23.843Z",
   "totalCommands": 32,
   "groups": {
     "Change Scenes": [
@@ -414,7 +414,7 @@
         "name": "Ending",
         "group": "Pre/Post/Brb",
         "triggers": [
-          "!End"
+          "!Ending"
         ],
         "enabled": true,
         "caseSensitive": false,
