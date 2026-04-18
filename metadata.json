@@ -1,7 +1,6 @@
 {
   "_comment": "Edit descriptions/access/cooldown here. New commands auto-populate. Deleted commands move to _archived so they restore if recreated with the same ID.",
-  "_archived": {
-  },
+  "_archived": {},
   "6dd8c1f7-2831-40de-ad0a-7c035452a69b": {
     "_label": "!MGame",
     "description": "",

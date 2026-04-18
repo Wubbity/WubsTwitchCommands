@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-18T00:02:23.843Z",
-  "totalCommands": 32,
+  "generated": "2026-04-18T00:24:56.117Z",
+  "totalCommands": 25,
   "groups": {
     "Change Scenes": [
       {
@@ -13,7 +13,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -26,7 +26,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -39,7 +39,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -53,7 +53,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -66,7 +66,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -79,7 +79,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       }
     ],
@@ -184,7 +184,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       }
     ],
@@ -199,7 +199,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -212,7 +212,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -227,7 +227,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -240,7 +240,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       }
     ],
@@ -256,121 +256,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "9eef7989-232e-4fc9-b6af-0d3d4ad5ae04",
-        "name": "Set Game Minecraft",
-        "group": "Set Game",
-        "triggers": [
-          "!setgame Minecraft",
-          "!MC"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      }
-    ],
-    "Apple Music Commands": [
-      {
-        "id": "fa12e964-e05b-4c1d-b18d-72d21054b22c",
-        "name": "Next Song",
-        "group": "Apple Music Commands",
-        "triggers": [
-          "!nextsong",
-          "!ns",
-          "!next",
-          "!skip",
-          "!skipsong"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "6bf1417f-27f1-49d9-81e5-def5117bc67d",
-        "name": "Now Playing",
-        "group": "Apple Music Commands",
-        "triggers": [
-          "!np",
-          "!nowplaying",
-          "!song",
-          "!currentsong",
-          "!music",
-          "!playingnow"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "ae433518-a0b4-4772-8def-41b92b5cdf34",
-        "name": "Play Music",
-        "group": "Apple Music Commands",
-        "triggers": [
-          "!play",
-          "!resume",
-          "!playmusic",
-          "!startmusic"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "a8c30a2f-8022-4a9c-b551-a9730472f74f",
-        "name": "Previous Song",
-        "group": "Apple Music Commands",
-        "triggers": [
-          "!previoussong",
-          "!previous",
-          "!presong",
-          "!prevsong",
-          "!pv"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "86e34849-aabf-403b-bdc3-47dab200a92c",
-        "name": "Music Queue",
-        "group": "Apple Music Commands",
-        "triggers": [
-          "!q",
-          "!musicqueue",
-          "!queue"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
-        "cooldown": null
-      },
-      {
-        "id": "2bdad2d7-27a5-4444-b9d9-2682275a827e",
-        "name": "Stop Music",
-        "group": "Apple Music Commands",
-        "triggers": [
-          "!stopmusic",
-          "!stop",
-          "!endmusic"
-        ],
-        "enabled": false,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       }
     ],
@@ -406,7 +292,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -419,7 +305,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": " Mods",
         "cooldown": null
       },
       {
@@ -432,7 +318,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       }
     ],
@@ -450,7 +336,7 @@
         "enabled": true,
         "caseSensitive": false,
         "description": "",
-        "access": "Everyone",
+        "access": "Mods",
         "cooldown": null
       },
       {
@@ -463,8 +349,8 @@
         ],
         "enabled": true,
         "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
+        "description": "Skips song on the LLJW",
+        "access": "Mods",
         "cooldown": null
       }
     ],
