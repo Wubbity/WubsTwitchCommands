@@ -1,24 +1,66 @@
 {
   "_comment": "Edit descriptions/access/cooldown here. New commands auto-populate. Deleted commands move to _archived so they restore if recreated with the same ID.",
   "_archived": {},
-  "6dd8c1f7-2831-40de-ad0a-7c035452a69b": {
-    "_label": "!MGame",
-    "description": "Changes screen to Main Game Screen",
+  "057ae332-1dd7-4785-968c-53fd2585ca41": {
+    "_label": "!throne",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "1723c7d4-6fd4-4286-afe3-80d2689fe409": {
+    "_label": "!BRB",
+    "description": "",
     "access": "Mods",
     "cooldown": null,
     "hidden": false
   },
-  "fa99d43b-c812-41d6-80e9-afaea0fd5b2d": {
-    "_label": "!commands",
+  "1dfa04cf-18f3-4433-8e5d-d09faea692c8": {
+    "_label": "!iSwap",
     "description": "",
-    "access": "Everyone",
+    "access": "Mods",
     "cooldown": null,
     "hidden": false
   },
-  "e04f2464-e8de-495b-91cb-01992e2fedbe": {
-    "_label": "!8ball",
+  "225e8dc1-b1e4-45d0-8e8c-3df0f6b3135c": {
+    "_label": "!yes",
+    "description": "",
+    "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "23761572-c45c-4983-a0ba-51ae1c13d3ac": {
+    "_label": "!iMain",
+    "description": "",
+    "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "2bdad2d7-27a5-4444-b9d9-2682275a827e": {
+    "_label": "!stopmusic",
     "description": "",
     "access": "Everyone",
+    "cooldown": null,
+    "hidden": true
+  },
+  "37fc28d2-f999-4a02-9f19-92f47d669f34": {
+    "_label": "!no",
+    "description": "",
+    "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "3ac2bc3d-4a46-46a5-a677-7fc5b0369037": {
+    "_label": "!MSwap",
+    "description": "",
+    "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "3fef8875-16ca-4921-bec5-140576249dd7": {
+    "_label": "!setgame Call of Duty: Black Ops 7",
+    "description": "",
+    "access": "Mods",
     "cooldown": null,
     "hidden": false
   },
@@ -36,29 +78,22 @@
     "cooldown": null,
     "hidden": false
   },
-  "225e8dc1-b1e4-45d0-8e8c-3df0f6b3135c": {
-    "_label": "!yes",
+  "62569659-b031-41aa-bce1-1c5e8328a328": {
+    "_label": "!Ending",
+    "description": "",
+    "access": " Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "629a6499-25da-4550-b009-6750b2a1c436": {
+    "_label": "!iFC",
     "description": "",
     "access": "Mods",
     "cooldown": null,
     "hidden": false
   },
-  "3fef8875-16ca-4921-bec5-140576249dd7": {
-    "_label": "!setgame Call of Duty: Black Ops 7",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "3ac2bc3d-4a46-46a5-a677-7fc5b0369037": {
-    "_label": "!MSwap",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "37fc28d2-f999-4a02-9f19-92f47d669f34": {
-    "_label": "!no",
+  "64a8e2e8-0ed6-4e23-a0f1-976d159904eb": {
+    "_label": "!play",
     "description": "",
     "access": "Mods",
     "cooldown": null,
@@ -71,12 +106,26 @@
     "cooldown": null,
     "hidden": true
   },
-  "057ae332-1dd7-4785-968c-53fd2585ca41": {
-    "_label": "!throne",
+  "6dd8c1f7-2831-40de-ad0a-7c035452a69b": {
+    "_label": "!MGame",
+    "description": "Changes screen to Main Game Screen",
+    "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "7a7ac218-fa89-4229-acb8-0e00e90d2485": {
+    "_label": "!end",
+    "description": "",
+    "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "86e34849-aabf-403b-bdc3-47dab200a92c": {
+    "_label": "!q",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
-    "hidden": false
+    "hidden": true
   },
   "891c62e4-9237-49f5-8ac4-d360f3b13c66": {
     "_label": "!Socials",
@@ -85,22 +134,36 @@
     "cooldown": null,
     "hidden": false
   },
-  "629a6499-25da-4550-b009-6750b2a1c436": {
-    "_label": "!iFC",
+  "8fd9c88f-d0bb-47ba-ab53-421df6d23132": {
+    "_label": "!Starting",
     "description": "",
     "access": "Mods",
     "cooldown": null,
     "hidden": false
   },
-  "2bdad2d7-27a5-4444-b9d9-2682275a827e": {
-    "_label": "!stopmusic",
+  "9eef7989-232e-4fc9-b6af-0d3d4ad5ae04": {
+    "_label": "!setgame Minecraft",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
     "hidden": true
   },
-  "1723c7d4-6fd4-4286-afe3-80d2689fe409": {
-    "_label": "!BRB",
+  "a8c30a2f-8022-4a9c-b551-a9730472f74f": {
+    "_label": "!previoussong",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": true
+  },
+  "ae433518-a0b4-4772-8def-41b92b5cdf34": {
+    "_label": "!play",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": true
+  },
+  "b33b3274-c7f1-4f69-8513-0b7ffd7e4461": {
+    "_label": "!rw",
     "description": "",
     "access": "Mods",
     "cooldown": null,
@@ -113,66 +176,10 @@
     "cooldown": null,
     "hidden": false
   },
-  "64a8e2e8-0ed6-4e23-a0f1-976d159904eb": {
-    "_label": "!play",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "b33b3274-c7f1-4f69-8513-0b7ffd7e4461": {
-    "_label": "!rw",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "fe805621-85a7-4bfe-9cd8-b97002e8a685": {
-    "_label": "asd",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "9eef7989-232e-4fc9-b6af-0d3d4ad5ae04": {
-    "_label": "!setgame Minecraft",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": true
-  },
-  "8fd9c88f-d0bb-47ba-ab53-421df6d23132": {
-    "_label": "!Starting",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
   "ce853dc3-7b7d-40c5-b21d-df1ab4467244": {
     "_label": "!HH",
     "description": "",
     "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "62569659-b031-41aa-bce1-1c5e8328a328": {
-    "_label": "!Ending",
-    "description": "",
-    "access": " Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "ae433518-a0b4-4772-8def-41b92b5cdf34": {
-    "_label": "!play",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": true
-  },
-  "7a7ac218-fa89-4229-acb8-0e00e90d2485": {
-    "_label": "!end",
-    "description": "",
-    "access": "Mods",
     "cooldown": null,
     "hidden": false
   },
@@ -190,38 +197,17 @@
     "cooldown": null,
     "hidden": false
   },
-  "23761572-c45c-4983-a0ba-51ae1c13d3ac": {
-    "_label": "!iMain",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "a8c30a2f-8022-4a9c-b551-a9730472f74f": {
-    "_label": "!previoussong",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": true
-  },
-  "1dfa04cf-18f3-4433-8e5d-d09faea692c8": {
-    "_label": "!iSwap",
-    "description": "",
-    "access": "Mods",
-    "cooldown": null,
-    "hidden": false
-  },
-  "86e34849-aabf-403b-bdc3-47dab200a92c": {
-    "_label": "!q",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": true
-  },
   "ddb8c881-20a5-4be1-9228-2c8cbbe620bf": {
     "_label": "!MCam",
     "description": "",
     "access": "Mods",
+    "cooldown": null,
+    "hidden": false
+  },
+  "e04f2464-e8de-495b-91cb-01992e2fedbe": {
+    "_label": "!8ball",
+    "description": "",
+    "access": "Everyone",
     "cooldown": null,
     "hidden": false
   },
@@ -231,5 +217,19 @@
     "access": "Everyone",
     "cooldown": null,
     "hidden": true
+  },
+  "fa99d43b-c812-41d6-80e9-afaea0fd5b2d": {
+    "_label": "!commands",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
+  },
+  "fe805621-85a7-4bfe-9cd8-b97002e8a685": {
+    "_label": "asd",
+    "description": "",
+    "access": "Everyone",
+    "cooldown": null,
+    "hidden": false
   }
 }
