@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17T23:49:04.691Z",
+  "generated": "2026-04-18T00:00:12.173Z",
   "totalCommands": 32,
   "groups": {
     "Change Scenes": [
@@ -468,11 +468,11 @@
         "cooldown": null
       }
     ],
-    "Ungrouped": [
+    "Generic Responses": [
       {
         "id": "d46fd9cf-5c75-4dbf-8e26-4fc7aabf8f1b",
         "name": "Hi Responses",
-        "group": "Ungrouped",
+        "group": "Generic Responses",
         "triggers": [
           "Hello",
           "Hi",
