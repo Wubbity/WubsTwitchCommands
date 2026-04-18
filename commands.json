@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-18T00:24:56.117Z",
-  "totalCommands": 25,
+  "generated": "2026-04-18T00:36:38.031Z",
+  "totalCommands": 26,
   "groups": {
     "Change Scenes": [
       {
@@ -241,6 +241,19 @@
         "caseSensitive": false,
         "description": "",
         "access": "Mods",
+        "cooldown": null
+      },
+      {
+        "id": "fe805621-85a7-4bfe-9cd8-b97002e8a685",
+        "name": "asd",
+        "group": "Admin/Streamer Only Commands",
+        "triggers": [
+          "asd"
+        ],
+        "enabled": true,
+        "caseSensitive": false,
+        "description": "",
+        "access": "Everyone",
         "cooldown": null
       }
     ],
