@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18T01:13:32.047Z",
+  "generated": "2026-04-19T09:02:20.202Z",
   "totalCommands": 26,
   "groups": {
     "Admin/Streamer Only Commands": [
@@ -290,6 +290,7 @@
         "group": "Lights",
         "triggers": [
           "!light",
+          "!lights",
           "!dim",
           "!rainbow",
           "!police"
