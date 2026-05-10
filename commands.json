@@ -1,6 +1,6 @@
 {
-  "generated": "2026-04-28T11:55:39.046Z",
-  "totalCommands": 26,
+  "generated": "2026-05-10T01:06:24.933Z",
+  "totalCommands": 25,
   "groups": {
     "Admin/Streamer Only Commands": [
       {
@@ -55,19 +55,6 @@
         "caseSensitive": false,
         "description": "",
         "access": "Mods",
-        "cooldown": null
-      },
-      {
-        "id": "fe805621-85a7-4bfe-9cd8-b97002e8a685",
-        "name": "asd",
-        "group": "Admin/Streamer Only Commands",
-        "triggers": [
-          "asd"
-        ],
-        "enabled": true,
-        "caseSensitive": false,
-        "description": "",
-        "access": "Everyone",
         "cooldown": null
       }
     ],

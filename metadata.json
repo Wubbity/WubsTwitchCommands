@@ -1,6 +1,14 @@
 {
   "_comment": "Edit descriptions/access/cooldown here. New commands auto-populate. Deleted commands move to _archived so they restore if recreated with the same ID.",
-  "_archived": {},
+  "_archived": {
+    "fe805621-85a7-4bfe-9cd8-b97002e8a685": {
+      "_label": "asd",
+      "description": "",
+      "access": "Everyone",
+      "cooldown": null,
+      "hidden": false
+    }
+  },
   "057ae332-1dd7-4785-968c-53fd2585ca41": {
     "_label": "!throne",
     "description": "",
@@ -220,13 +228,6 @@
   },
   "fa99d43b-c812-41d6-80e9-afaea0fd5b2d": {
     "_label": "!commands",
-    "description": "",
-    "access": "Everyone",
-    "cooldown": null,
-    "hidden": false
-  },
-  "fe805621-85a7-4bfe-9cd8-b97002e8a685": {
-    "_label": "asd",
     "description": "",
     "access": "Everyone",
     "cooldown": null,
